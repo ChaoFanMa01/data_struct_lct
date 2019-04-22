@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Growth of Functions</title>
+	<style type="text/css">
+		code{
+			font-weight: bold;
+			color: firebrick;
+			font-size: 15px;
+		}
+		sub.explanation{
+			font-style: italic;
+			color: darkgreen;
+		}
+		sub.question{
+			color: red;
+		}
+		div.codeblock{
+			text-align: center;
+		}
+		div.cap{
+			text-align: center;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		mark{
+			background-color: yellow;
+            color: red;
+		}
+        table {
+            border-style: solid;
+            border-color: transparent;
+            border-width: 5px;
+            width: 600px;
+        }
+        table td {
+            border: 5px solid transparent;
+        }
+	</style>
+	<link href="styles/paraiso-light.css" rel="stylesheet">  
+    <script src="highlight.pack.js"></script>  
+    <script >hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+    <p>For a given function \(g(n)\), we denote by \(\Theta(g(n))\) the set of function:</p>
+    <p>\[\Theta(g(n))=\{f(n):\text{ there exist positive constants }\} c_1,c_2\text{ and }n_0\text{ such that }0\leq c_1g(n)\leq f(n)\leq c_2g(n)\text{ for all } n\geq n_0.\]</p>
+    <p>Because \(\Theta(g(n))\) is a set, we could write "\(f(n)\in\Theta(g(n))\)" to indicate that \(f(n)\) is a member of \(\Theta(g(n))\). Instead, we will usually write "\(f(n)=\Theta(g(n))\)" to express the same notion.</p>
+    <p>When we have only an <b>asymptotic upper bound</b>, we use O-notation. For a given function \(g(n)\), we denote by O\(g(n)\) teh set of functions:</p>
+    <p>\[O(g(n))=\{f(n): \text{ there exit positive constants } c \text{ and } n_0 \text{ such that } 0\leq f(n)\leq cg(n)\text{ for all } n\geq n_0\}.\]</p>
+    <p>We write \(f(n)=O(g(n))\) to indicate that a function \(f(n)\) is a member of the set O(\(g(n)\)). Note that \(f(n)=\Theta(g(n))\), since \(\Theta\)-notation is a stronger notion than O-notation.</p>
+    <p>\(\Omega\)-notation provides an <b>asymptotic lower bound</b>. For a given function \(g(n)\), we denote by \(\Omega(g(n))\) the set of functions:</p>
+    <p>\[\Omega(g(n))=\{f(n):\text{ there exist positive constants } c \text{ and } n_0 \text{ such that } 0\leq cg(n)\leq f(n)\text{ for all } n\geq n_0\}.\]</p>
+</body>
+</html>
