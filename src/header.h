@@ -2,11 +2,11 @@
 #define HEADER_H
 
 typedef enum {
-    OK, ERROR, OVERFLOW
-} Status;
+    DS_OK, DS_ERROR
+} ds_stat;
 
 typedef enum {
-    FALSE = 0, TRUE = 1
-} Bool;
+    DS_FALSE, DS_TRUE
+} ds_bool;
 
 #endif
